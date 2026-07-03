@@ -8,173 +8,222 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="container">
-    <header class="intro-block">
-      <div class="intro-text">
+  <main class="page">
+    <header class="hero">
+      <section class="intro">
         <h1>Chaiyong Mun</h1>
-        <p>
+        <p class="lead">
           I am an Integrated M.S./Ph.D. student in the Department of Intelligence and Information at
           <a href="https://en.snu.ac.kr/" target="_blank" rel="noopener">Seoul National University</a>,
-          working in robotics under the supervision of Prof. Jaeheung Park at
-          <a href="https://dyros.snu.ac.kr/" target="_blank" rel="noopener">DYROS, Dynamic Robotic Systems Lab</a>.
+          working on robotics at
+          <a href="https://dyros.snu.ac.kr/" target="_blank" rel="noopener">DYROS Lab</a>.
         </p>
         <p>
           My research focuses on multimodal robot manipulation through visual-tactile perception and robot learning.
-          I am interested in tactile sensing, imitation learning, autonomous manipulation, and Vision-Language-Action models
-          for humanoid robots that can understand and interact with complex real-world environments.
+          I am especially interested in tactile sensing, imitation learning, autonomous manipulation, and
+          Vision-Language-Action models for humanoid robots that can understand and interact with complex real-world environments.
         </p>
         <p>
           Previously, I received my B.S. in Electrical and Computer Engineering from Seoul National University.
           I have worked on humanoid manipulation, haptic teleoperation, transparent-object grasp pose estimation,
           and autonomous laundry handling for domestic service robots.
         </p>
-        <p class="contact-links">
-          <a href="mailto:chaiyong98@snu.ac.kr">Email</a> /
-          <a href="assets/Chaiyong_Mun_CV.pdf" target="_blank" rel="noopener">CV</a> /
+        <p class="links">
+          <a href="mailto:chaiyong98@snu.ac.kr">Email</a>
+          <span>/</span>
+          <a href="assets/Chaiyong_Mun_CV.pdf" target="_blank" rel="noopener">CV</a>
+          <span>/</span>
           <a href="https://github.com/chaiyong0401" target="_blank" rel="noopener">GitHub</a>
         </p>
-      </div>
-      <div class="photo-wrap">
+      </section>
+      <aside class="profile-card" aria-label="Profile summary">
         <img class="profile-photo" src="assets/photo_yong.png" alt="Chaiyong Mun profile photo">
-      </div>
+        <div class="card-text">
+          <strong>Research Assistant</strong>
+          <span>Dynamic Robotic Systems Laboratory</span>
+          <span>Seoul, South Korea</span>
+        </div>
+      </aside>
     </header>
 
-    <section class="section" id="research">
+    <section class="section">
       <h2>Research</h2>
       <p>
         I develop learning-based manipulation systems that combine visual perception, tactile sensing, and control.
         My current work explores how robots can estimate grasp states, detect tactile failures, recover from manipulation errors,
         and generate robust end-effector pose and force commands for contact-rich tasks.
       </p>
+      <div class="research-grid">
+        <article>
+          <h3>Visual-Tactile Manipulation</h3>
+          <p>Learning policies that use both visual and tactile information for contact-rich grasping and manipulation.</p>
+        </article>
+        <article>
+          <h3>Tactile Failure Recovery</h3>
+          <p>Detecting and recovering from failures in deformable-object manipulation, including autonomous laundry handling.</p>
+        </article>
+        <article>
+          <h3>Humanoid Robot Learning</h3>
+          <p>Building manipulation frameworks for humanoid robots that can learn from demonstrations and reason about physical interaction.</p>
+        </article>
+      </div>
     </section>
 
-<section id="publications">
+    <section class="section">
   <h2>Publications</h2>
 
-  <table class="pub-table">
-    <tbody>
-      <tr>
-        <td class="pub-image-cell">
-          <img src="assets/iros2026.png" alt="IROS 2026 teaser" class="pub-image">
-        </td>
-        <td class="pub-info-cell">
-          <a class="pub-title" href="assets/MCY_2026IROS.pdf" target="_blank">
-            Hierarchical Reactive Grasping for Contact-rich Manipulation via Topological Visuo-Tactile Learning
-          </a>
-          <div class="pub-authors">
-            <strong>Chaiyong Mun</strong>, Eunho Sung, Haeseong Lee, and Jaeheung Park
-          </div>
-          <div class="pub-venue">
-            IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026
-          </div>
-          <div class="pub-links">
-            <a href="assets/MCY_2026IROS.pdf" target="_blank">PDF</a>
-          </div>
-          <p class="pub-desc">
-            This work presents a hierarchical visuo-tactile learning framework for contact-rich manipulation.
-            It combines a low-frequency semantic planning policy with a high-frequency reactive action decoder
-            to modulate grasp force using tactile contact changes such as incipient slip. The method is validated
-            on fluid transfer, rubber band stretching, and whiteboard erasure tasks.
-          </p>
-        </td>
-      </tr>
+  <article class="publication-card highlighted">
+    <img class="publication-image" src="assets/iros2026.png" alt="IROS 2026 paper teaser">
 
-      <tr>
-        <td class="pub-image-cell">
-          <img src="assets/kroc2026.png" alt="KRoC 2026 teaser" class="pub-image">
-        </td>
-        <td class="pub-info-cell">
-          <a class="pub-title" href="assets/kroc2026.pdf" target="_blank">
-            Grasp State Estimation via 3D Mean Resultant Length
-          </a>
-          <div class="pub-authors">
-            Mingyu Suh, <strong>Chaiyong Mun</strong>, Haeseong Lee, and Jaeheung Park
-          </div>
-          <div class="pub-venue">
-            Proceedings of the Korea Robotics Society Annual Conference (KRoC), 2026
-          </div>
-          <div class="pub-links">
-            <a href="assets/kroc2026.pdf" target="_blank">PDF</a>
-          </div>
-          <p class="pub-desc">
-            This work estimates grasp states using cumulative tactile signal changes and a 3D extension of
-            Mean Resultant Length. Instead of explicitly estimating contact force or friction, the method analyzes
-            directional concentration in tactile distributions to classify no-contact, grasp, and slip states.
-          </p>
-        </td>
-      </tr>
+    <div class="publication-content">
+      <h3>Hierarchical Reactive Grasping for Contact-Rich Manipulation via Topological Visuo-Tactile Learning</h3>
+      <p class="authors"><strong>C. Mun</strong>, E. Sung, H. Lee, and J. Park</p>
+      <p class="venue">Accepted for publication at IEEE International Conference on Intelligent Robots and Systems (IROS), 2026.</p>
+      <p>
+        This work presents a hierarchical visuo-tactile learning framework for contact-rich robotic manipulation.
+        The proposed method combines a low-frequency semantic planning policy with a high-frequency reactive action decoder,
+        enabling robots to modulate grasp force in response to tactile contact changes such as incipient slip.
+        Real-world experiments on fluid transfer, rubber band stretching, and whiteboard erasure demonstrate robust grasp stability
+        and improved force modulation over vision-only and force-aware baselines.
+      </p>
+      <p class="paper-links">
+        <a href="assets/MCY_2026IROS.pdf" target="_blank" rel="noopener">PDF</a>
+      </p>
+    </div>
+  </article>
 
-      <tr>
-        <td class="pub-image-cell">
-          <img src="assets/access2026.png" alt="IEEE Access teaser" class="pub-image">
-        </td>
-        <td class="pub-info-cell">
-          <a class="pub-title" href="assets/access2026.pdf" target="_blank">
-            SNU-Avatar Haptic Arm: A Hybrid QDD/DD Operator Interface for Teleoperation
-          </a>
-          <div class="pub-authors">
-            Eunho Sung, Seungbin You, Jaeyong Shin, Suhan Park, Sungmoon Hur, Jaehun Kim,
-            Seunghwan Byun, <strong>Chaiyong Mun</strong>, Haeseong Lee, Dongjun Kim, and Jaeheung Park
-          </div>
-          <div class="pub-venue">
-            IEEE Access, 2026
-          </div>
-          <div class="pub-links">
-            <a href="assets/access2026.pdf" target="_blank">PDF</a>
-          </div>
-          <p class="pub-desc">
-            This paper introduces the SNU-Avatar Haptic Arm, a 6-DoF haptic operator interface for immersive
-            humanoid robot teleoperation. The system combines quasi-direct-drive and direct-drive actuation to
-            balance human-scale workspace, backdrivability, and force output, and is validated in teleoperation scenarios.
-          </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <article class="publication-card">
+    <img class="publication-image" src="assets/kroc2026.png" alt="KRoC 2026 paper teaser">
+
+    <div class="publication-content">
+      <h3>Grasp State Estimation via 3D Mean Resultant Length</h3>
+      <p class="authors">M. Suh, <strong>C. Mun</strong>, H. Lee, and J. Park</p>
+      <p class="venue">Proceedings of the Korea Robotics Society Annual Conference (KRoC), 2026.</p>
+      <p>
+        This work proposes a tactile-only grasp state estimation method based on cumulative tactile signal changes
+        and a 3D extension of Mean Resultant Length.
+        Instead of explicitly estimating contact force or friction, the method analyzes the directional concentration
+        of tactile distributions to classify no-contact, grasp, and slip states.
+        Experiments show that simple tactile distribution features can provide useful grasp-state feedback for adaptive manipulation.
+      </p>
+      <p class="paper-links">
+        <a href="assets/kroc2026.pdf" target="_blank" rel="noopener">PDF</a>
+      </p>
+    </div>
+  </article>
+
+  <article class="publication-card">
+    <img class="publication-image" src="assets/access2026.png" alt="IEEE Access paper teaser">
+
+    <div class="publication-content">
+      <h3>SNU-Avatar Haptic Arm: A Hybrid QDD/DD Operator Interface for Teleoperation</h3>
+      <p class="authors">
+        E. Sung, S. You, J. Shin, S. Park, S. Hur, J. Kim, S. Byun,
+        <strong>C. Mun</strong>, H. Lee, D. Kim, and J. Park
+      </p>
+      <p class="venue">IEEE Access, vol. 14, pp. 57409-57426, 2026.</p>
+      <p>
+        This paper introduces the SNU-Avatar Haptic Arm, a 6-DoF haptic operator interface designed for immersive humanoid robot teleoperation.
+        The system combines quasi-direct-drive and direct-drive actuation to balance wide human-scale workspace,
+        high backdrivability, and sufficient force output.
+        Hardware analysis and experiments validate its force rendering capability, structural feasibility, and practical utility
+        in teleoperation scenarios including the ANA Avatar XPRIZE Finals.
+      </p>
+      <p class="paper-links">
+        <a href="assets/access2026.pdf" target="_blank" rel="noopener">PDF</a>
+      </p>
+    </div>
+  </article>
 </section>
 
-    <section class="section" id="outputs">
-      <h2>Research Outputs</h2>
-      <div class="item">
-        <div class="item-title">Journal Manuscript in Preparation</div>
-        <p>One-Class Tactile Failure Detection and Recovery for Autonomous Laundry Handling.</p>
+    <section class="section two-column">
+      <div>
+        <h2>Research Outputs</h2>
+        <article class="compact">
+          <h3>Journal Manuscript in Preparation</h3>
+          <p>One-Class Tactile Failure Detection and Recovery for Autonomous Laundry Handling.</p>
+        </article>
+        <article class="compact">
+          <h3>Patent Application in Preparation</h3>
+          <p>Method and apparatus for robot grasp state estimation using dual-channel tactile anomaly detection with mean resultant length-based features.</p>
+        </article>
       </div>
-      <div class="item">
-        <div class="item-title">Patent Application in Preparation</div>
-        <p>Method and apparatus for robot grasp state estimation using dual-channel tactile anomaly detection with Mean Resultant Length-based features.</p>
+      <div>
+        <h2>Teaching</h2>
+        <article class="compact">
+          <h3>DYROS Robotics Boot Camp II</h3>
+          <p>Teaching Assistant, Seoul National University, 2025. Robot design, system integration, simulation, and control.</p>
+        </article>
+        <article class="compact">
+          <h3>DYROS Robotics Boot Camp I</h3>
+          <p>Teaching Assistant, Seoul National University, 2025. ROS: Robot Operating System.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section" id="projects">
+    <section class="section">
       <h2>Projects</h2>
-      <div class="project"><span>2026</span><p><strong>AI-based Robot Control Algorithm Development</strong> — Samsung DA, Project Lead. Developed an autonomous laundry handling system by integrating visual perception, tactile sensing, and closed-loop failure recovery.</p></div>
-      <div class="project"><span>2024-2025</span><p><strong>Learning-based Humanoid Robot Manipulation</strong> — MOTIE, Research Assistant. Developed a visual-tactile imitation learning framework for robust object manipulation.</p></div>
-      <div class="project"><span>2024</span><p><strong>Haptic Teleoperation for Humanoid Robot Manipulation</strong> — DYROS, Project Lead. Built a MuJoCo simulation environment and implemented haptic teleoperation for grasping and manipulation.</p></div>
-      <div class="project"><span>2023</span><p><strong>Transparent Object Grasp Pose Estimation</strong> — Samsung SAIT, Research Assistant. Developed a vision-based grasp pose estimation framework using RGB-D depth restoration and NeRF-based perception.</p></div>
+      <article class="project">
+        <div class="project-year">2026</div>
+        <div>
+          <h3>AI-based Robot Control Algorithm Development</h3>
+          <p class="meta">Samsung DA - Project Lead</p>
+          <p>Developed an autonomous laundry handling system for domestic service robots by integrating visual perception, tactile sensing, and closed-loop failure recovery.</p>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-year">2024-2025</div>
+        <div>
+          <h3>Learning-based Humanoid Robot Manipulation</h3>
+          <p class="meta">MOTIE - Research Assistant</p>
+          <p>Developed a framework that integrates visual and tactile imitation learning to generate end-effector pose and force commands for robust object manipulation.</p>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-year">2024</div>
+        <div>
+          <h3>Haptic Teleoperation for Humanoid Robot Manipulation</h3>
+          <p class="meta">DYROS - Project Lead</p>
+          <p>Built a MuJoCo simulation environment for a laboratory humanoid robot and implemented haptic teleoperation for object grasping and manipulation.</p>
+        </div>
+      </article>
+      <article class="project">
+        <div class="project-year">2023</div>
+        <div>
+          <h3>Transparent Object Grasp Pose Estimation</h3>
+          <p class="meta">Samsung SAIT - Research Assistant</p>
+          <p>Developed a vision-based transparent object grasp pose estimation framework integrating RGB-D depth restoration and NeRF-based perception.</p>
+        </div>
+      </article>
     </section>
 
-    <section class="section two-col" id="education-skills">
+    <section class="section two-column">
       <div>
         <h2>Education</h2>
-        <div class="item">
-          <div class="item-title">Seoul National University</div>
+        <article class="compact">
+          <h3>Seoul National University</h3>
           <p>Integrated M.S./Ph.D. program, Department of Intelligence and Information, 2023 Fall-current.</p>
-        </div>
-        <div class="item">
-          <div class="item-title">Seoul National University</div>
+          <p>GPA: 4.03 / 4.3</p>
+        </article>
+        <article class="compact">
+          <h3>Seoul National University</h3>
           <p>B.S. in Electrical and Computer Engineering, 2017-2023 Fall.</p>
-        </div>
+          <p>GPA: 3.5 / 4.3</p>
+        </article>
       </div>
       <div>
         <h2>Skills</h2>
-        <p><strong>Software:</strong> C++, Python, MATLAB, PyTorch, Anaconda, Docker, C</p>
-        <p><strong>System Integration:</strong> RTLinux, ROS1, ROS2, EtherCAT</p>
-        <p><strong>Applications:</strong> Isaac Gym/Lab, MuJoCo, CoppeliaSim, MoveIt, Git, VS Code, Notion</p>
+        <ul class="skill-list">
+          <li><strong>Software:</strong> C++, Python, MATLAB, PyTorch, Anaconda, Docker, C</li>
+          <li><strong>System Integration:</strong> RTLinux, ROS1, ROS2, EtherCAT</li>
+          <li><strong>Applications:</strong> Isaac Gym/Lab, MuJoCo, CoppeliaSim, MoveIt, Git, VS Code, Notion</li>
+          <li><strong>Languages:</strong> Korean, English</li>
+        </ul>
       </div>
     </section>
 
     <footer>
-      <p>© <span id="year"></span> Chaiyong Mun.</p>
+      <p>© <span id="year"></span> Chaiyong Mun. Built as a lightweight academic homepage.</p>
     </footer>
   </main>
   <script src="script.js"></script>
