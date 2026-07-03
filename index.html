@@ -35,7 +35,7 @@
         </p>
       </div>
       <div class="photo-wrap">
-        <img src="assets/photo_yong.png" alt="Chaiyong Mun profile photo" class="profile-photo" />
+        <img class="profile-photo" src="assets/photo_yong.png" alt="Chaiyong Mun profile photo">
       </div>
     </header>
 
@@ -48,70 +48,90 @@
       </p>
     </section>
 
-    <section class="section" id="publications">
-      <h2>Publications</h2>
+<section id="publications">
+  <h2>Publications</h2>
 
-      <div class="publication">
-        <div class="publication-media">
-          <img src="assets/iros2026.png" alt="IROS 2026 paper teaser" />
-        </div>
-        <div class="publication-body">
-          <a class="paper-title" href="assets/MCY_2026IROS.pdf" target="_blank" rel="noopener">
+  <table class="pub-table">
+    <tbody>
+      <tr>
+        <td class="pub-image-cell">
+          <img src="assets/iros2026.png" alt="IROS 2026 teaser" class="pub-image">
+        </td>
+        <td class="pub-info-cell">
+          <a class="pub-title" href="assets/MCY_2026IROS.pdf" target="_blank">
             Hierarchical Reactive Grasping for Contact-rich Manipulation via Topological Visuo-Tactile Learning
           </a>
-          <div class="paper-authors"><strong>Chaiyong Mun</strong>, Eunho Sung, Haeseong Lee, and Jaeheung Park</div>
-          <div class="paper-venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026</div>
-          <p>
-            A hierarchical visuo-tactile learning framework for contact-rich manipulation. The method combines a low-frequency
-            semantic planner with a high-frequency reactive action decoder, allowing robots to modulate grasp force from tactile
-            contact changes such as incipient slip. Experiments on fluid transfer, rubber band stretching, and whiteboard erasure
-            show robust grasp stability and improved force modulation.
+          <div class="pub-authors">
+            <strong>Chaiyong Mun</strong>, Eunho Sung, Haeseong Lee, and Jaeheung Park
+          </div>
+          <div class="pub-venue">
+            IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2026
+          </div>
+          <div class="pub-links">
+            <a href="assets/MCY_2026IROS.pdf" target="_blank">PDF</a>
+          </div>
+          <p class="pub-desc">
+            This work presents a hierarchical visuo-tactile learning framework for contact-rich manipulation.
+            It combines a low-frequency semantic planning policy with a high-frequency reactive action decoder
+            to modulate grasp force using tactile contact changes such as incipient slip. The method is validated
+            on fluid transfer, rubber band stretching, and whiteboard erasure tasks.
           </p>
-          <div class="paper-links"><a href="assets/MCY_2026IROS.pdf" target="_blank" rel="noopener">PDF</a></div>
-        </div>
-      </div>
+        </td>
+      </tr>
 
-      <div class="publication">
-        <div class="publication-media">
-          <img src="assets/kroc2026.png" alt="KRoC 2026 paper teaser" />
-        </div>
-        <div class="publication-body">
-          <a class="paper-title" href="assets/kroc2026.pdf" target="_blank" rel="noopener">
+      <tr>
+        <td class="pub-image-cell">
+          <img src="assets/kroc2026.png" alt="KRoC 2026 teaser" class="pub-image">
+        </td>
+        <td class="pub-info-cell">
+          <a class="pub-title" href="assets/kroc2026.pdf" target="_blank">
             Grasp State Estimation via 3D Mean Resultant Length
           </a>
-          <div class="paper-authors">Mingyu Suh, <strong>Chaiyong Mun</strong>, Haeseong Lee, and Jaeheung Park</div>
-          <div class="paper-venue">Proceedings of the Korea Robotics Society Annual Conference (KRoC), 2026</div>
-          <p>
-            A tactile-only grasp-state estimation method based on cumulative tactile signal changes and a 3D extension of Mean
-            Resultant Length. Instead of explicitly estimating force or friction, the method analyzes directional concentration in
-            tactile distributions to classify no-contact, grasp, and slip states for adaptive manipulation.
+          <div class="pub-authors">
+            Mingyu Suh, <strong>Chaiyong Mun</strong>, Haeseong Lee, and Jaeheung Park
+          </div>
+          <div class="pub-venue">
+            Proceedings of the Korea Robotics Society Annual Conference (KRoC), 2026
+          </div>
+          <div class="pub-links">
+            <a href="assets/kroc2026.pdf" target="_blank">PDF</a>
+          </div>
+          <p class="pub-desc">
+            This work estimates grasp states using cumulative tactile signal changes and a 3D extension of
+            Mean Resultant Length. Instead of explicitly estimating contact force or friction, the method analyzes
+            directional concentration in tactile distributions to classify no-contact, grasp, and slip states.
           </p>
-          <div class="paper-links"><a href="assets/kroc2026.pdf" target="_blank" rel="noopener">PDF</a></div>
-        </div>
-      </div>
+        </td>
+      </tr>
 
-      <div class="publication">
-        <div class="publication-media">
-          <img src="assets/access2026.png" alt="IEEE Access paper teaser" />
-        </div>
-        <div class="publication-body">
-          <a class="paper-title" href="assets/access2026.pdf" target="_blank" rel="noopener">
+      <tr>
+        <td class="pub-image-cell">
+          <img src="assets/access2026.png" alt="IEEE Access teaser" class="pub-image">
+        </td>
+        <td class="pub-info-cell">
+          <a class="pub-title" href="assets/access2026.pdf" target="_blank">
             SNU-Avatar Haptic Arm: A Hybrid QDD/DD Operator Interface for Teleoperation
           </a>
-          <div class="paper-authors">
-            Eunho Sung, Seungbin You, Jaeyong Shin, Suhan Park, Sungmoon Hur, Jaehun Kim, Seunghwan Byun,
-            <strong>Chaiyong Mun</strong>, Haeseong Lee, Dongjun Kim, and Jaeheung Park
+          <div class="pub-authors">
+            Eunho Sung, Seungbin You, Jaeyong Shin, Suhan Park, Sungmoon Hur, Jaehun Kim,
+            Seunghwan Byun, <strong>Chaiyong Mun</strong>, Haeseong Lee, Dongjun Kim, and Jaeheung Park
           </div>
-          <div class="paper-venue">IEEE Access, vol. 14, pp. 57409-57426, 2026</div>
-          <p>
-            A 6-DoF haptic operator interface for immersive humanoid robot teleoperation. The system combines quasi-direct-drive
-            and direct-drive actuation to balance a wide human-scale workspace, high backdrivability, and sufficient force output.
-            Hardware analyses and teleoperation experiments validate the system, including use in the ANA Avatar XPRIZE Finals.
+          <div class="pub-venue">
+            IEEE Access, 2026
+          </div>
+          <div class="pub-links">
+            <a href="assets/access2026.pdf" target="_blank">PDF</a>
+          </div>
+          <p class="pub-desc">
+            This paper introduces the SNU-Avatar Haptic Arm, a 6-DoF haptic operator interface for immersive
+            humanoid robot teleoperation. The system combines quasi-direct-drive and direct-drive actuation to
+            balance human-scale workspace, backdrivability, and force output, and is validated in teleoperation scenarios.
           </p>
-          <div class="paper-links"><a href="assets/access2026.pdf" target="_blank" rel="noopener">PDF</a></div>
-        </div>
-      </div>
-    </section>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
     <section class="section" id="outputs">
       <h2>Research Outputs</h2>
