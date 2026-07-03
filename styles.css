@@ -193,3 +193,11 @@ footer {
   .profile-card { position: static; max-width: 300px; }
   .project { grid-template-columns: 1fr; gap: 6px; }
 }
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
