@@ -218,13 +218,15 @@ footer {
 }
 
 .publication-image {
-  width: 280px;
-  height: 175px;
-  object-fit: cover;
-  border-radius: 12px;
+  width: 240px;
+  height: 150px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 4px;
   border: 1px solid #e5e7eb;
-  background: #f3f4f6;
+  background: #ffffff;
   flex-shrink: 0;
+  padding: 6px;
 }
 
 .publication-content {
